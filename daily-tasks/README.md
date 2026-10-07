@@ -11,7 +11,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 
 ## 🛠️ Technologies & Tools Used
 - **Language**: Java 21 (LTS)
-- **Build Tool**: Apache Maven
+- **Build Tool**: Apache Maven (with multi-profile builds)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
 - **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Debugging
@@ -24,7 +24,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | :--- | :--- | :--- | :---: | :--- | :--- |
 | **Day 1** | Daily Task 1 | Java Platform Basics + Agile/Scrum | ✅ Completed | JDK 21 installation, JVM PlatformInfo inspector, bytecode disassembly with `javap -c` | `day-1: java-platform-basics` |
 | **Day 2** | Daily Task 2 | Language Fundamentals + Git Fundamentals | ✅ Completed | Monthly Usage Analyser with 1D/2D arrays, slab billing constants, overflow prevention, ternary grades | `day-2: language-fundamentals` |
-| **Day 3** | Daily Task 3 | Control Flow + Maven | ⏳ Pending | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging | `day-3: control-flow` |
+| **Day 3** | Daily Task 3 | Control Flow + Maven | ✅ Completed | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging & dev/prod profiles | `day-3: control-flow` |
 | **Day 4** | Daily Task 4 | OOP Concepts + IDE & Debugging | ⏳ Pending | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints | `day-4: oop-concepts` |
 | **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ⏳ Pending | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation | `day-5: inheritance-polymorphism` |
 | **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ⏳ Pending | Custom checked/unchecked exceptions, chained causes, multi-catch, and AI error analysis | `day-6: exception-handling` |
@@ -47,7 +47,12 @@ daily-tasks/
 │   ├── MonthlyUsageAnalyzer.java
 │   └── README.md
 │
-├── day-3-control-flow/                       # Day 3: ATM Simulator & Maven Build (Upcoming)
+├── day-3-control-flow/                       # Day 3: ATM Simulator & Maven Build (dev/prod profiles)
+│   ├── pom.xml
+│   ├── src/main/java/com/hcl/atm/ATMSimulator.java
+│   ├── src/main/resources/application.properties
+│   └── README.md
+│
 ├── day-4-oop-concepts/                       # Day 4: Bank Account Domain & Debugging (Upcoming)
 ├── day-5-inheritance-polymorphism/           # Day 5: Payment Processing & Polymorphism (Upcoming)
 └── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions (Upcoming)

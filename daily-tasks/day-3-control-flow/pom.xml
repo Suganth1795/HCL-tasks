@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hcl.daily</groupId>
+    <artifactId>day-3-control-flow</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>Day 3 - ATM Simulator (Control Flow and Maven)</name>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Profiles: Dev and Prod with environment-specific properties -->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env.name>DEVELOPMENT</env.name>
+                <atm.bank.name>HCL Bank - Dev Sandbox</atm.bank.name>
+                <atm.max.withdrawal.limit>10000</atm.max.withdrawal.limit>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env.name>PRODUCTION</env.name>
+                <atm.bank.name>HCL Premier Banking</atm.bank.name>
+                <atm.max.withdrawal.limit>50000</atm.max.withdrawal.limit>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.hcl.atm.ATMSimulator</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
