@@ -26,7 +26,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | **Day 2** | Daily Task 2 | Language Fundamentals + Git Fundamentals | ✅ Completed | Monthly Usage Analyser with 1D/2D arrays, slab billing constants, overflow prevention, ternary grades | `day-2: language-fundamentals` |
 | **Day 3** | Daily Task 3 | Control Flow + Maven | ✅ Completed | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging & dev/prod profiles | `day-3: control-flow` |
 | **Day 4** | Daily Task 4 | OOP Concepts + IDE & Debugging | ✅ Completed | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints & hot code replace | `day-4: oop-concepts` |
-| **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ⏳ Pending | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation | `day-5: inheritance-polymorphism` |
+| **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ✅ Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` |
 | **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ⏳ Pending | Custom checked/unchecked exceptions, chained causes, multi-catch, and AI error analysis | `day-6: exception-handling` |
 
 ---
@@ -60,6 +60,17 @@ daily-tasks/
 │   │   └── app/BankApplication.java
 │   └── README.md
 │
-├── day-5-inheritance-polymorphism/           # Day 5: Payment Processing & Polymorphism (Upcoming)
+├── day-5-inheritance-polymorphism/           # Day 5: Payment Processing & Polymorphism Hierarchy
+│   ├── src/com/hcl/payment/
+│   │   ├── model/
+│   │   │   ├── Payment.java (Abstract)
+│   │   │   ├── Refundable.java (Interface)
+│   │   │   ├── CreditCardPayment.java
+│   │   │   ├── UPIPayment.java
+│   │   │   └── CashPayment.java
+│   │   ├── service/PaymentProcessor.java
+│   │   └── app/PaymentApplication.java
+│   └── README.md
+│
 └── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions (Upcoming)
 ```
