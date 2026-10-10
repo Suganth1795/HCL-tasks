@@ -14,7 +14,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 - **Build Tool**: Apache Maven (with multi-profile builds)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Debugging
+- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, AI-Assisted Debugging
 
 ---
 
@@ -27,7 +27,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | **Day 3** | Daily Task 3 | Control Flow + Maven | ✅ Completed | ATM Simulator console application with PIN verification, switch-menu, transaction statement, Maven packaging & dev/prod profiles | `day-3: control-flow` |
 | **Day 4** | Daily Task 4 | OOP Concepts + IDE & Debugging | ✅ Completed | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints & hot code replace | `day-4: oop-concepts` |
 | **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ✅ Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` |
-| **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ⏳ Pending | Custom checked/unchecked exceptions, chained causes, multi-catch, and AI error analysis | `day-6: exception-handling` |
+| **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ✅ Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` |
 
 ---
 
@@ -36,7 +36,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 ```
 daily-tasks/
 │
-├── README.md                                 # Overall Daily Tasks Tracker & Documentation
+├── README.md                                 # Overall Daily Tasks Tracker & Master Documentation
 │
 ├── day-1-java-platform-basics/               # Day 1: JVM & Platform Introspection
 │   ├── PlatformInfo.java
@@ -72,5 +72,17 @@ daily-tasks/
 │   │   └── app/PaymentApplication.java
 │   └── README.md
 │
-└── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions (Upcoming)
+└── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions
+    ├── src/com/hcl/order/
+    │   ├── exception/
+    │   │   ├── InsufficientStockException.java (Checked)
+    │   │   ├── InvalidQuantityException.java (Unchecked)
+    │   │   ├── PaymentDeclinedException.java (Checked)
+    │   │   └── OrderProcessingException.java (Chained wrapper)
+    │   ├── model/
+    │   │   ├── Product.java
+    │   │   └── Order.java
+    │   ├── service/OrderProcessor.java
+    │   └── app/OrderApplication.java
+    └── README.md
 ```
