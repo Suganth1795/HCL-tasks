@@ -1,11 +1,11 @@
 # 🚀 HCL Core Java & Engineering Track - Daily Hands-on Tasks
 
-This repository tracks the sequential daily hands-on coding tasks for the **HCL Java Full Stack Training Program (Week 1 / Sprint 1)**.
+This repository tracks the sequential daily hands-on coding tasks for the **HCL Java Full Stack Training Program (Weeks 1 & 2 / Sprint 1)**.
 
 ---
 
 ## 🎯 Program Objective
-The daily tasks are designed to build progressive competency in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, Git workflow management, clean code principles, and debugging methodologies.
+The daily tasks are designed to build progressive competency in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, the Java Collections Framework, Generics, Git workflow management, clean code principles, and debugging methodologies.
 
 ---
 
@@ -14,7 +14,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 - **Build Tool**: Apache Maven (with multi-profile builds)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, AI-Assisted Debugging
+- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Collections Framework (Lists, Sets, Deques, PriorityQueue, Maps, Comparators), Generics (Bounded Types, Wildcards), IO & Try-With-Resources
 
 ---
 
@@ -28,6 +28,9 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | **Day 4** | Daily Task 4 | OOP Concepts + IDE & Debugging | ✅ Completed | BankAccount domain model with constructor chaining, encapsulation, debugger watchpoints & hot code replace | `day-4: oop-concepts` |
 | **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ✅ Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` |
 | **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ✅ Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` |
+| **Day 7** | Daily Task 7 | Collections Framework — Part 1 | ✅ Completed | Library Waitlist (ArrayList, LinkedHashSet, ArrayDeque, PriorityQueue, Iterator.remove) + timing benchmark table | `day-7: collections-framework` |
+| **Day 8** | Daily Task 8 | Collections Framework — Part 2 | ⏳ Pending | Employee Directory (HashMap, Map.merge, TreeMap report, Comparable, Comparator chain, equals/hashCode demo) | `day-8: collections-framework` |
+| **Day 9** | Daily Task 9 | Generics | ⏳ Pending | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
 
 ---
 
@@ -72,17 +75,26 @@ daily-tasks/
 │   │   └── app/PaymentApplication.java
 │   └── README.md
 │
-└── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions
-    ├── src/com/hcl/order/
-    │   ├── exception/
-    │   │   ├── InsufficientStockException.java (Checked)
-    │   │   ├── InvalidQuantityException.java (Unchecked)
-    │   │   ├── PaymentDeclinedException.java (Checked)
-    │   │   └── OrderProcessingException.java (Chained wrapper)
-    │   ├── model/
-    │   │   ├── Product.java
-    │   │   └── Order.java
-    │   ├── service/OrderProcessor.java
-    │   └── app/OrderApplication.java
-    └── README.md
+├── day-6-exception-handling/                 # Day 6: Order Processor & Robust Exceptions
+│   ├── src/com/hcl/order/
+│   │   ├── exception/
+│   │   │   ├── InsufficientStockException.java
+│   │   │   ├── InvalidQuantityException.java
+│   │   │   ├── PaymentDeclinedException.java
+│   │   │   └── OrderProcessingException.java
+│   │   ├── model/Product.java, Order.java
+│   │   ├── service/OrderProcessor.java
+│   │   └── app/OrderApplication.java
+│   └── README.md
+│
+├── day-7-collections-framework/              # Day 7: Library Waitlist & Collection Performance
+│   ├── src/com/hcl/library/
+│   │   ├── model/Book.java, BorrowRequest.java
+│   │   ├── service/LibraryWaitlistService.java
+│   │   ├── benchmark/CollectionPerformanceBenchmark.java
+│   │   └── app/LibraryApp.java
+│   └── README.md
+│
+├── day-8-collections-framework/              # Day 8: Employee Directory & Map Architectures (Upcoming)
+└── day-9-generics/                           # Day 9: Type-safe Generic Toolkit (Upcoming)
 ```
