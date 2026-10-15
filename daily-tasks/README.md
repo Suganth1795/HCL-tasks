@@ -14,7 +14,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 - **Build Tool**: Apache Maven (with multi-profile builds)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Collections Framework (Lists, Sets, Deques, PriorityQueue, Maps, Comparators), Generics (Bounded Types, Wildcards), IO & Try-With-Resources
+- **Key Concepts**: JVM Architecture, Language Fundamentals, Control Flow, OOP & Design Patterns, Exception Handling, Collections Framework (Lists, Sets, Deques, PriorityQueue, Maps, Comparators), Generics (Bounded Types, Wildcards, PECS), IO & Try-With-Resources
 
 ---
 
@@ -30,7 +30,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ✅ Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` |
 | **Day 7** | Daily Task 7 | Collections Framework — Part 1 | ✅ Completed | Library Waitlist (ArrayList, LinkedHashSet, ArrayDeque, PriorityQueue, Iterator.remove) + timing benchmark table | `day-7: collections-framework` |
 | **Day 8** | Daily Task 8 | Collections Framework — Part 2 | ✅ Completed | Employee Directory (HashMap, Map.merge, TreeMap report, Comparable, Comparator chain, equals/hashCode demo) | `day-8: collections-framework` |
-| **Day 9** | Daily Task 9 | Generics | ⏳ Pending | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
+| **Day 9** | Daily Task 9 | Generics | ✅ Completed | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards PECS, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
 
 ---
 
@@ -102,5 +102,11 @@ daily-tasks/
 │   │   └── EmployeeDirectory.java
 │   └── README.md
 │
-└── day-9-generics/                           # Day 9: Type-safe Generic Toolkit (Upcoming)
+└── day-9-generics/                           # Day 9: Type-safe Generic Toolkit & IO
+    ├── data/products.csv
+    ├── src/com/hcl/generics/
+    │   ├── model/Pair.java, Box.java
+    │   ├── resource/CustomResource.java
+    │   └── GenericToolkit.java
+    └── README.md
 ```
