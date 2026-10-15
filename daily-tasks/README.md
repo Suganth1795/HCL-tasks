@@ -29,7 +29,7 @@ The daily tasks are designed to build progressive competency in modern Java deve
 | **Day 5** | Daily Task 5 | Inheritance & Polymorphism + Branching | ✅ Completed | Payment hierarchy (Card/UPI/Cash), Refundable interface, Git conflict resolution simulation & rebase workflow | `day-5: inheritance-polymorphism` |
 | **Day 6** | Daily Task 6 | Exception Handling + AI Debugging | ✅ Completed | Custom checked/unchecked exceptions, chained causes, multi-catch, guaranteed finally audit, and AI error analysis | `day-6: exception-handling` |
 | **Day 7** | Daily Task 7 | Collections Framework — Part 1 | ✅ Completed | Library Waitlist (ArrayList, LinkedHashSet, ArrayDeque, PriorityQueue, Iterator.remove) + timing benchmark table | `day-7: collections-framework` |
-| **Day 8** | Daily Task 8 | Collections Framework — Part 2 | ⏳ Pending | Employee Directory (HashMap, Map.merge, TreeMap report, Comparable, Comparator chain, equals/hashCode demo) | `day-8: collections-framework` |
+| **Day 8** | Daily Task 8 | Collections Framework — Part 2 | ✅ Completed | Employee Directory (HashMap, Map.merge, TreeMap report, Comparable, Comparator chain, equals/hashCode demo) | `day-8: collections-framework` |
 | **Day 9** | Daily Task 9 | Generics | ⏳ Pending | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
 
 ---
@@ -95,6 +95,12 @@ daily-tasks/
 │   │   └── app/LibraryApp.java
 │   └── README.md
 │
-├── day-8-collections-framework/              # Day 8: Employee Directory & Map Architectures (Upcoming)
+├── day-8-collections-framework/              # Day 8: Employee Directory & Map Architectures
+│   ├── src/com/hcl/employee/
+│   │   ├── model/Employee.java
+│   │   ├── demo/BrokenKeyEmployee.java
+│   │   └── EmployeeDirectory.java
+│   └── README.md
+│
 └── day-9-generics/                           # Day 9: Type-safe Generic Toolkit (Upcoming)
 ```
