@@ -34,7 +34,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 | **Day 9** | Daily Task 9 | Generics | ✅ Completed | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards PECS, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
 | **Day 10** | Daily Task 10 | Memory Management | ✅ Completed | Memory Lab: StackOverflowError depth with -Xss, OutOfMemoryError with -Xmx64m, String += vs StringBuilder, -Xlog:gc, Integer cache pitfall | `day-10: memory-management` |
 | **Day 11** | Daily Task 11 | AI Integration (Core Java) | ✅ Completed | Prompt & Review Drill: Student POJO comparison, StudentService review with 5 AI-generated issues identified & fixed | `day-11: ai-integration-core-java` |
-| **Day 12** | Daily Task 12 | Assessment 1 — Core Java Checkpoint | ⏳ Pending | Core Java warm-up quiz & practical console app implementing core flows according to A1 rubric | `day-12: assessment-1` |
+| **Day 12** | Daily Task 12 | Assessment 1 — Core Java Checkpoint | ✅ Completed | Core Java 10-question warm-up quiz & practical console app implementing 2 core flows (100/100 on A1 rubric) | `day-12: assessment-1` |
 | **Day 13** | Daily Task 13 | Functional Programming | ⏳ Pending | Product Filter Engine: composed Predicates, Function chains, Consumer, Supplier, and method references | `day-13: functional-programming` |
 | **Day 14** | Daily Task 14 | Streams API | ⏳ Pending | Sales Analytics: revenue by category (groupingBy + summingDouble), top 3 customers, partitioned orders, sequential vs parallel benchmark | `day-14: streams-api` |
 | **Day 15** | Daily Task 15 | Optional & Date/Time | ⏳ Pending | Subscription Calculator: expiry, days remaining, grace periods, IST/UTC conversions, Optional refactoring | `day-15: optional-date-time` |
@@ -62,16 +62,18 @@ daily-tasks/
 ├── day-8-collections-framework/              # Day 8: Employee Directory & Map Architectures
 ├── day-9-generics/                           # Day 9: Type-safe Generic Toolkit & IO
 ├── day-10-memory-management/                 # Day 10: JVM Memory Lab (-Xss, -Xmx, GC logs, Integer Cache)
-│
 ├── day-11-ai-integration-core-java/          # Day 11: AI Prompting & Code Review Drill
-│   ├── AI-USAGE.md
-│   ├── src/com/hcl/ai/
-│   │   ├── model/StudentVague.java, Student.java
-│   │   ├── service/StudentService.java
-│   │   └── app/AIDrillApp.java
+│
+├── day-12-assessment-1/                      # Day 12: Core Java Checkpoint & Practical App
+│   ├── checkpoint-quiz/A1-QUIZ-EVALUATION.md
+│   ├── A1-RUBRIC-SCORECARD.md
+│   ├── src/com/hcl/checkpoint/
+│   │   ├── model/Account.java, Transaction.java
+│   │   ├── exception/CheckpointException.java
+│   │   ├── service/CheckpointService.java
+│   │   └── app/CheckpointApp.java
 │   └── README.md
 │
-├── day-12-assessment-1/                      # Day 12: Core Java Checkpoint (Upcoming)
 ├── day-13-functional-programming/            # Day 13: Functional Interfaces & Predicate Engine (Upcoming)
 ├── day-14-streams-api/                       # Day 14: Sales Analytics & Stream Reductions (Upcoming)
 ├── day-15-optional-date-time/                # Day 15: Subscription Calculator & java.time (Upcoming)
