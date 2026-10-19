@@ -15,7 +15,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 - **Database**: MySQL / Relational Database Design (3NF)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts**: JVM Architecture, Memory Management (-Xss, -Xmx, GC Logging), Collections, Generics, AI Code Auditing & Prompt Engineering, Lambdas, Functional Interfaces, Streams API (Collectors, Parallel Streams, ForkJoinPool), java.time, CompletableFuture, Modern Java (Records, Pattern Matching, Text Blocks), SQL CRUD
+- **Key Concepts**: JVM Architecture, Memory Management (-Xss, -Xmx, GC Logging), Collections, Generics, AI Code Auditing & Prompt Engineering, Lambdas, Functional Interfaces, Streams API, java.time (JSR-310), Optional, CompletableFuture, Modern Java (Records, Pattern Matching, Text Blocks), SQL CRUD
 
 ---
 
@@ -37,7 +37,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 | **Day 12** | Daily Task 12 | Assessment 1 — Core Java Checkpoint | ✅ Completed | Core Java 10-question warm-up quiz & practical console app implementing 2 core flows (100/100 on A1 rubric) | `day-12: assessment-1` |
 | **Day 13** | Daily Task 13 | Functional Programming | ✅ Completed | Product Filter Engine: composed Predicates, Function chains, Consumer, Supplier, and method references | `day-13: functional-programming` |
 | **Day 14** | Daily Task 14 | Streams API | ✅ Completed | Sales Analytics: revenue by category (groupingBy + summingDouble), top 3 customers, partitioned orders, sequential vs parallel benchmark | `day-14: streams-api` |
-| **Day 15** | Daily Task 15 | Optional & Date/Time | ⏳ Pending | Subscription Calculator: expiry, days remaining, grace periods, IST/UTC conversions, Optional refactoring | `day-15: optional-date-time` |
+| **Day 15** | Daily Task 15 | Optional & Date/Time | ✅ Completed | Subscription Calculator: expiry, days remaining, grace periods, IST/UTC conversions, Optional refactoring | `day-15: optional-date-time` |
 | **Day 16** | Daily Task 16 | Concurrency Essentials | ⏳ Pending | Price Aggregator: ExecutorService + Callable, CompletableFuture.allOf, exceptionally handling, timing comparison | `day-16: concurrency-essentials` |
 | **Day 17** | Daily Task 17 | Java 9–21 Features + Modern APIs | ⏳ Pending | Shape & Invoice Lab: sealed interface, records, pattern-matching switch, text blocks, List.of immutability, strip/isBlank | `day-17: java-9-21-features` |
 | **Day 18** | Daily Task 18 | Relational Database Concepts | ⏳ Pending | Normalisation Workshop: college_registrations spreadsheet normalized step-by-step to 3NF + ER diagram | `day-18: relational-database-concepts` |
@@ -65,14 +65,16 @@ daily-tasks/
 ├── day-11-ai-integration-core-java/          # Day 11: AI Prompting & Code Review Drill
 ├── day-12-assessment-1/                      # Day 12: Core Java Checkpoint & Practical App
 ├── day-13-functional-programming/            # Day 13: Functional Interfaces & Predicate Engine
-│
 ├── day-14-streams-api/                       # Day 14: Sales Analytics & Parallel Streams
-│   ├── src/com/hcl/streams/
-│   │   ├── model/SalesOrder.java
-│   │   └── SalesAnalytics.java
+│
+├── day-15-optional-date-time/                # Day 15: Subscription Calculator & java.time
+│   ├── src/com/hcl/datetime/
+│   │   ├── model/Subscription.java
+│   │   ├── exception/SubscriptionNotFoundException.java
+│   │   ├── service/SubscriptionService.java
+│   │   └── SubscriptionCalculator.java
 │   └── README.md
 │
-├── day-15-optional-date-time/                # Day 15: Subscription Calculator & java.time (Upcoming)
 ├── day-16-concurrency-essentials/            # Day 16: Price Aggregator & CompletableFuture (Upcoming)
 ├── day-17-java-9-21-features/                # Day 17: Modern Java Records, Pattern Matching & Text Blocks (Upcoming)
 ├── day-18-relational-database-concepts/      # Day 18: Normalization Workshop to 3NF (Upcoming)
