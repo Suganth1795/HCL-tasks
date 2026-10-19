@@ -5,7 +5,7 @@ This repository tracks the sequential daily hands-on coding tasks for the **HCL 
 ---
 
 ## 🎯 Program Objective
-The daily tasks build progressive, real-world mastery in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, the Java Collections Framework, Generics, JVM memory management, functional programming & streams, modern Java 9–21 features, concurrency, and relational database systems.
+The daily tasks build progressive, real-world mastery in modern Java development (Java 21 LTS), software engineering best practices, Maven project structures, object-oriented design patterns, the Java Collections Framework, Generics, JVM memory management, AI-assisted development auditing, functional programming & streams, modern Java 9–21 features, concurrency, and relational database systems.
 
 ---
 
@@ -15,7 +15,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 - **Database**: MySQL / Relational Database Design (3NF)
 - **Version Control**: Git & GitHub
 - **IDE / Environment**: Antigravity / VS Code / IntelliJ / Terminal CLI
-- **Key Concepts**: JVM Architecture, Memory Management (-Xss, -Xmx, GC Logging), Collections, Generics, Lambdas, Functional Interfaces, Streams API, java.time, CompletableFuture, Modern Java (Records, Pattern Matching, Sealed Types), SQL CRUD
+- **Key Concepts**: JVM Architecture, Memory Management (-Xss, -Xmx, GC Logging), Collections, Generics, AI Code Auditing & Prompt Engineering, Lambdas, Functional Interfaces, Streams API, java.time, CompletableFuture, Modern Java (Records, Pattern Matching, Text Blocks), SQL CRUD
 
 ---
 
@@ -33,7 +33,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 | **Day 8** | Daily Task 8 | Collections Framework — Part 2 | ✅ Completed | Employee Directory (HashMap, Map.merge, TreeMap report, Comparable, Comparator chain, equals/hashCode demo) | `day-8: collections-framework` |
 | **Day 9** | Daily Task 9 | Generics | ✅ Completed | Generic Toolkit (Pair, Box<T extends Number>, Comparable max(), wildcards PECS, products.csv try-with-resources, AutoCloseable) | `day-9: generics` |
 | **Day 10** | Daily Task 10 | Memory Management | ✅ Completed | Memory Lab: StackOverflowError depth with -Xss, OutOfMemoryError with -Xmx64m, String += vs StringBuilder, -Xlog:gc, Integer cache pitfall | `day-10: memory-management` |
-| **Day 11** | Daily Task 11 | AI Integration (Core Java) | ⏳ Pending | Prompt & Review Drill: Student POJO comparison, StudentService review with 5 AI-generated issues identified & fixed | `day-11: ai-integration-core-java` |
+| **Day 11** | Daily Task 11 | AI Integration (Core Java) | ✅ Completed | Prompt & Review Drill: Student POJO comparison, StudentService review with 5 AI-generated issues identified & fixed | `day-11: ai-integration-core-java` |
 | **Day 12** | Daily Task 12 | Assessment 1 — Core Java Checkpoint | ⏳ Pending | Core Java warm-up quiz & practical console app implementing core flows according to A1 rubric | `day-12: assessment-1` |
 | **Day 13** | Daily Task 13 | Functional Programming | ⏳ Pending | Product Filter Engine: composed Predicates, Function chains, Consumer, Supplier, and method references | `day-13: functional-programming` |
 | **Day 14** | Daily Task 14 | Streams API | ⏳ Pending | Sales Analytics: revenue by category (groupingBy + summingDouble), top 3 customers, partitioned orders, sequential vs parallel benchmark | `day-14: streams-api` |
@@ -61,17 +61,16 @@ daily-tasks/
 ├── day-7-collections-framework/              # Day 7: Library Waitlist & Collection Performance
 ├── day-8-collections-framework/              # Day 8: Employee Directory & Map Architectures
 ├── day-9-generics/                           # Day 9: Type-safe Generic Toolkit & IO
-│
 ├── day-10-memory-management/                 # Day 10: JVM Memory Lab (-Xss, -Xmx, GC logs, Integer Cache)
-│   ├── src/com/hcl/memory/
-│   │   ├── StackOverflowExperiment.java
-│   │   ├── HeapOOMExperiment.java
-│   │   ├── StringConcatBenchmark.java
-│   │   ├── IntegerCachePitfall.java
-│   │   └── MemoryLab.java
+│
+├── day-11-ai-integration-core-java/          # Day 11: AI Prompting & Code Review Drill
+│   ├── AI-USAGE.md
+│   ├── src/com/hcl/ai/
+│   │   ├── model/StudentVague.java, Student.java
+│   │   ├── service/StudentService.java
+│   │   └── app/AIDrillApp.java
 │   └── README.md
 │
-├── day-11-ai-integration-core-java/          # Day 11: AI Prompting & Code Review Drill (Upcoming)
 ├── day-12-assessment-1/                      # Day 12: Core Java Checkpoint (Upcoming)
 ├── day-13-functional-programming/            # Day 13: Functional Interfaces & Predicate Engine (Upcoming)
 ├── day-14-streams-api/                       # Day 14: Sales Analytics & Stream Reductions (Upcoming)
