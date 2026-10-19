@@ -40,7 +40,7 @@ The daily tasks build progressive, real-world mastery in modern Java development
 | **Day 15** | Daily Task 15 | Optional & Date/Time | ✅ Completed | Subscription Calculator: expiry, days remaining, grace periods, IST/UTC conversions, Optional refactoring | `day-15: optional-date-time` |
 | **Day 16** | Daily Task 16 | Concurrency Essentials | ✅ Completed | Price Aggregator: ExecutorService + Callable, CompletableFuture.allOf, exceptionally handling, timing comparison | `day-16: concurrency-essentials` |
 | **Day 17** | Daily Task 17 | Java 9–21 Features + Modern APIs | ✅ Completed | Shape & Invoice Lab: sealed interface, records, pattern-matching switch, text blocks, List.of immutability, strip/isBlank | `day-17: java-9-21-features` |
-| **Day 18** | Daily Task 18 | Relational Database Concepts | ⏳ Pending | Normalisation Workshop: college_registrations spreadsheet normalized step-by-step to 3NF + ER diagram | `day-18: relational-database-concepts` |
+| **Day 18** | Daily Task 18 | Relational Database Concepts | ✅ Completed | Normalisation Workshop: college_registrations spreadsheet normalized step-by-step to 3NF + ER diagram | `day-18: relational-database-concepts` |
 | **Day 19** | Daily Task 19 | CRUD Operations | ⏳ Pending | MySQL employees/departments database, 30 rows, 12 filtering/sorting queries, safe transaction updates | `day-19: crud-operations` |
 
 ---
@@ -91,7 +91,11 @@ daily-tasks/
 │   │   └── ModernJavaDemo.java
 │   └── README.md
 │
-├── day-18-relational-database-concepts/      # Day 18: Normalization Workshop to 3NF (Upcoming)
+├── day-18-relational-database-concepts/      # Day 18: Normalization Workshop to 3NF
+│   ├── normalization-worksheet.md
+│   ├── schema-3nf.sql
+│   └── README.md
+│
 └── day-19-crud-operations/                   # Day 19: MySQL Schema & Filtering Queries (Upcoming)
 ```
 
